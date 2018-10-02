@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>VORTEX</title>
+    <meta name="theme-color" content="#0c0203">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Vortex, the next-gen communication system based on one of the world's most secure protocol give you the full control and truly shield your secrets, privacy and freedom against quantum computers.">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Material+Icons">
+    <link rel="stylesheet" href="css/material.red-indigo.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ico.css">
+
+    <meta property="og:title" content="VORTEX.CHAT"/>
+    <meta property="og:description" content="Vortex, the next-gen communication system based on one of the world's most secure protocol give you the full control and truly shield your secrets, privacy and freedom against quantum computers."/>
+    <meta property="og:url" content="https://vortex.chat"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://vortex.chat/images/vortex_open_graph.jpg"/>
+
+    <!-- Google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106476316-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106476316-1');
+    </script>
+
+</head>
+    <body>
+
+        <div id="comingSoonSnackbar" class="mdl-js-snackbar mdl-snackbar shadow">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+
+        <div id="toolbar">
+            <div class="toolbar-inner">
+                <div class="toolbar-inner-flex">
+                    <div class="toolbar-branding">
+                        <a href="#">
+                            <img class="toolbar-logo" src="images/vortex_logo.svg">
+                        </a>
+                        <a class="toolbar-title" href="#">
+                            VORTEX
+                        </a>
+                    </div>
+                    <div class="toolbar-menu">
+                        <span><a href="https://steemit.com/@vortex.chat" target="_blank">BLOG</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header">
+            <div class="header-inner">
+
+                <div class="header-top">
+                    <div class="header-left">
+                        <div class="header-text">
+                            <h1>Secure communication system.</h1>
+                            <h2>Take the full control.</h2>
+                        </div>
+                        <div class="header-action">
+                            <button id="headerDownloadButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <img class="header-mockup" src="images/screenshots/iPhone_7_mockup_2.png">
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <h2 class="ico-title">Pending ICO [<span id="icoTokenSoldInPercent">0</span>%]</h2>
+                    <div class="ico-state">
+                        <div class="ico-progress-bar">
+                            <div id="icoProgressBuffer"></div>
+                        </div>
+                        <div class="ico-progress-text">
+                            <span>
+                                <span id="icoTokenSoldInK">0</span>
+                                <span>K / </span>
+                                <span id="icoTokenTotalK">40</span>K STEEM
+                            </span>
+                            <span>
+                                <button id="icoBuyButton"
+                                        onclick="window.open('https://vortex.chat/crowdfunding.html');"
+                                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                    Participate <i class="material-icons">&#xE88F;</i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="headerTransition">
+            <img src="images/header_transition.png">
+        </div>
+
+        <div id="advantages">
+            <div class="advantages-inner">
+                <div class="advantage-box">
+                    <div class="advantage-box-inner">
+                        <i class="material-icons advantage-box-icon">&#xE32A;</i>
+                        <h3>Be protected</h3>
+                        <p>Take advantage of a military security level and easy to use communication system to avoid hacks and leaks related issues. <a href="/protection.html">Learn more...</a></p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <div class="advantage-box-inner">
+                        <i class="material-icons advantage-box-icon">&#xE227;</i>
+                        <h3>Save on cost</h3>
+                        <p>Private messages and calls are completely free for you to save huge costs for all of your communications. <a href="/savings.html">Learn more...</a></p>
+                    </div>
+                </div>
+                <div class="advantage-box">
+                    <div class="advantage-box-inner">
+                        <i class="material-icons advantage-box-icon">&#xE877;</i>
+                        <h3>Swiss made</h3>
+                        <p>Industrial performances and Swiss quality, privacy, and trust for you to obtain the best. <a href="/quality.html">Learn more...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="advantagesTransition">
+            <img src="images/advantages_transition.png">
+        </div>
+
+        <div id="screenshots">
+            <div class="screenshots-inner">
+                <h2>Details make perfection.</h2>
+                <!--h4>— Leonardo Da Vinci</h4-->
+            </div>
+
+            <div id="screenshotsSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_1_1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_3.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_5.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/screenshots/iPhone_7_mockup_6.png)"></div>
+                </div>
+                <div id="screenshotsSwiperPagination" class="swiper-pagination"></div>
+            </div>
+
+            <div class="suitable-for-boxes">
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Governments</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Politicians</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Militaries</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Businesses</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Hackers</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Journalists</span>
+                </div>
+                <div class="suitable-for-box">
+                    <span><i class="material-icons">&#xE876;</i> Whistleblowers</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="screenshotsTransition">
+            <img src="images/screenshots_transition.png">
+        </div>
+
+        <div id="security">
+            <div class="security-inner">
+                <div class="security-text">
+                    <h2>Security & Quality.</h2>
+                    <p>Vortex's algorithms and protocols are approved at a "MILITARY LEVEL" by international and EU standards and therefore literally provide one of the world's most secure communication system. Vortex is powerful, efficient, and yet very simple to use. It is designed to be enjoyed by everyone.</p>
+                    <p>Vortex knows well why most cybersecurity insurance concerning industrial spying, hacks, and leaks only cover issues costing up to $100M. Vortex make you feel safe when communicating with your friends and colleagues by protecting your business and private life against the most costly communication related issues through one of the world's most secure <a href="protection.html">post-quantum protocol</a> which give you the full control and protection over all your communications.</p>
+                    <p id="securitySectionQuestion">How much do your freedom, secrets, and private life worth?</p>
+                </div>
+                <div class="security-image">
+                    <div class="security-image-inner">
+                        <div class="security-image-data-dots"></div>
+                        <div class="security-image-protection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="features">
+            <div id="featuresSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE157;</i> Blockchain authentication</h4>
+                        <p>The authenticity of your contacts is guaranteed by an incorruptible and indestructible distributed ledger.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE897;</i> Post-quantum cryptography</h4>
+                        <p>Encryption algorithms resist to actual and next-generation quantum computers attacks.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE425;</i> Self-destructing messages</h4>
+                        <p>Send self-destructing files and messages in order to avoid leaving any trace and links.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE8BE;</i> P2P communications</h4>
+                        <p>Data are directly sent to your contacts, our server does not proxy any communications.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE32A;</i> Seizure proof</h4>
+                        <p>Data are strongly encrypted on your device and you can delete all your data in one click.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">verified_user</i> Phishing proof</h4>
+                        <p>Protection against sending and receiving baits. No one can set you a trap.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE8CE;</i> Open-source</h4>
+                        <p>Anyone can verify and improve the source code. More eyes, more secure.</p>
+                    </div>
+                    <div class="swiper-slide shadow">
+                        <h4><i class="material-icons v-middle">&#xE0C7;</i> TOR & VPN</h4>
+                        <p>TOR and VPN solutions are compatible but not included.</p>
+                    </div>
+                </div>
+                <div id="featuresSwiperPagination" class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div id="download" style="background-image: url(images/background_woman_data_crop.jpg);">
+            <div class="download-inner">
+                <div class="download-text">
+                    <h3>When do you need Vortex?</h3>
+                </div>
+                <div class="download-button">
+                    <button id="downloadButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                        Download now
+                        <i class="material-icons">&#xE2C4;</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer__middle-section">
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Features</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="/partners.html">Partners</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">Details</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="https://github.com/vortexchat/vortex-branding/archive/master.zip">Resources</a></li>
+                            <li><a href="https://github.com/vortexchat/" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mdl-mega-footer__drop-down-section">
+                        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                        <h1 class="mdl-mega-footer__heading">About</h1>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="https://github.com/vortexchat/vortex-specifications" target="_blank">Specs</a></li>
+                            <li><a href="https://steemit.com/@vortex.chat" target="_blank">Blog</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mdl-mega-footer__bottom-section">
+                    <div class="mdl-logo">Copyright © 2017 vortex.chat | All rights reserved</div>
+                    <ul class="mdl-mega-footer__link-list">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//vortex.chat/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#fff" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" /></svg></a></li>
+                        <li><a href="https://twitter.com/home?status=https%3A//vortex.chat/" target="_blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#fff" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33Z" /></svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <script src="js/material.min.js"></script>
+    <script src="js/detectOS.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/toolbar.js"></script>
+    <script src="js/ico.js"></script>
+    <script src="js/index.js"></script>
+</html>

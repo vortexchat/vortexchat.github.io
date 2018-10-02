@@ -1,0 +1,110 @@
+
+/* ICO */
+
+#ico {
+    padding: 64px 32px 64px 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ico-inner {
+    display: inline-block;
+    max-width: 924px;
+    width: 100%;
+}
+
+.ico-title {
+    line-height: 61px;
+}
+
+.ico-title i {
+    font-size: 42px;
+}
+
+.ico-progress-bar {
+    height: 24px;
+    width: 100%;
+    margin: 36px 0 24px 0;
+    background-color: #440100;
+    position: relative;
+}
+
+#icoProgressBuffer {
+    background-color: #AC0623;
+    box-shadow: 0px 0px 12px #AC1223;
+    height: 100%;
+    width: 0%;
+    transition: width 1.7s cubic-bezier(1, 0, 0.65, 0.85);
+}
+
+@keyframes icoProgressBufferFlux {
+    0%   { left: -60%; background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));}
+    100% { left: 130%; background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3));}
+}
+
+.ico-progress-bar::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 30%;
+    background: rgba(255, 255, 255, 0);
+    animation: ICOProgressBufferFlux 1.2s 2.4s linear infinite;
+}
+
+.ico-progress-text {
+    font-size: 24px;
+    line-height: 56px;
+}
+
+@keyframes icoBuyButtonShadowAnimation {
+    0%   {box-shadow: 0px 0px 0px #450300;}
+    50%  {box-shadow: 0px 0px 16px #450300;}
+}
+
+@keyframes icoBuyButtonShadowHoverAnimation {
+    0%   {box-shadow: 0px 0px 0px #AC1223;}
+    50%  {box-shadow: 0px 0px 16px #AC1223;}
+}
+
+@keyframes icoBuyButtonHithitAnimation {
+    0%   { left: 0; }
+    100%  { left: 70%; }
+}
+
+#icoBuyButton {
+    z-index: 0;
+    background-color: #450300;
+    margin-left: 16px;
+    animation: ICOBuyButtonShadowAnimation 1.7s infinite;
+    transition: all .51s ease-out;
+}
+
+#icoBuyButton * {
+    z-index: 1;
+}
+
+#icoBuyButton::before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 36px;
+    width: 30%;
+    background: linear-gradient(to right, transparent, rgba(172, 18, 35, 0.19), transparent);
+    animation: ICOBuyButtonHithitAnimation 1.8s cubic-bezier(0.4, 0.18, 0.58, 0.82) infinite alternate;
+}
+
+#icoBuyButton:hover {
+    background-color: #AC1223;
+    animation: ICOBuyButtonShadowHoverAnimation 1.7s infinite;
+    transition: all .17s ease-in;
+}
+
+.ico-text {
+    text-align: justify;
+}
+
+.ico-text a {
+    color: #fff;
+}

@@ -1,0 +1,16 @@
+.page {
+    padding: 64px 32px 64px 32px;
+    min-height: calc(100vh - 383px);
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-inner {
+    display: inline-block;
+    max-width: 924px;
+    width: 100%;
+}
+
+.page-inner p {
+    text-align: justify;
+}

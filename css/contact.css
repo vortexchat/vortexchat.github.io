@@ -1,0 +1,98 @@
+/* FORM */
+.contact-form {
+    display: inline-block;
+    width: calc(50% - 33px);
+    padding-right: 32px;
+    border-right: 1px solid #fff;
+}
+
+.mdl-textfield {
+    width: 100%;
+}
+
+.mdl-textfield .mdl-textfield__label {
+    color: #c7c7c7 !important;
+    font-weight: bold;
+}
+
+.mdl-textfield.is-focused .mdl-textfield__label {
+    color: #ffffff !important;
+}
+
+.mdl-textfield__label::after {
+    background-color: #ffffff !important;
+}
+
+.submit-form-button-container {
+    width: 100%;
+    text-align: right;
+}
+
+.submit-form-button-container .submit-form-button {
+    background-color: #450300 !important;
+}
+
+.submit-form-button-container .submit-form-button i {
+    margin-left: 8px;
+}
+
+/* INFO */
+.contact-info {
+    display: inline-block;
+    width: calc(50% - 32px);
+    padding-left: 32px;
+    text-align: left;
+    float: right;
+}
+
+.legal-owner-box {
+    margin-bottom: 32px;
+}
+
+.legal-owner-image {
+    height: 97px;
+    width: 97px;
+    border-radius: 3px;
+    display: inline;
+}
+
+.legal-owner-text {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.legal-owner-name {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.external-team-box .external-team-inner button {
+    color: #fff;
+}
+
+.internal-team-box {
+    margin-top: 32px;
+}
+
+@media(max-width: 759px) {
+    .contact-form {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 64px;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+    }
+    .contact-info {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 64px;
+        float: none;
+    }
+    .legal-owner-image {
+        height: 72px;
+        width: 72px;
+    }
+}
